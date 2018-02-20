@@ -24,6 +24,9 @@ export class FoodDetailComponent implements OnInit {
     goBack(): void {
       this.location.back();
     }
+    update() : void{
+      this.foodService.updateFood(this.food);
+    }
 
   ngOnInit() {
     this.getFood();
